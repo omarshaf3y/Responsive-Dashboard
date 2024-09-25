@@ -12,9 +12,11 @@ class CustomDrawer extends StatelessWidget {
       child: const Column(
         children: [
           UserInfoListTile(
-              image: Assets.imagesAvatar3svg,
-              title: 'Lekan Okeowo',
-              subtitle: 'demo@gmail.com')
+            image: Assets.imagesAvatar3svg,
+            title: 'Lekan Okeowo',
+            subtitle: 'demo@gmail.com',
+          ),
+          SizedBox(height: 8),
         ],
       ),
     );

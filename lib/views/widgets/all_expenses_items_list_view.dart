@@ -5,6 +5,7 @@ import 'package:responsive_dashboard/views/widgets/all_expneses_item.dart';
 
 class AllExpensesItemsListView extends StatelessWidget {
   const AllExpensesItemsListView({super.key});
+
   static const items = [
     AllExpensesItemModel(
       image: Assets.imagesBalance,
@@ -25,13 +26,21 @@ class AllExpensesItemsListView extends StatelessWidget {
       price: r'$20.129',
     ),
   ];
+
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: items.length,
-      itemBuilder: (context, index) {
-        return AllExpensesItem(itemModel: items[index]);
-      },
+    return Row(
+      children: items.asMap().entries.map((e) {
+        int index = e.key;
+        var item = e.value;
+
+        return Expanded(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: index == 1 ? 12 : 0),
+            child: AllExpensesItem(itemModel: item),
+          ),
+        );
+      }).toList(),
     );
   }
 }

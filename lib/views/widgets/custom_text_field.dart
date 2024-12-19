@@ -8,14 +8,15 @@ class CustomTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
-          hintText: hint,
-          hintStyle:
-              AppStyles.styleRegular16.copyWith(color: const Color(0xffAAAAAA)),
-          fillColor: const Color(0xffFAFAFA),
-          filled: true,
-          border: buildBorder(),
-          enabledBorder: buildBorder(),
-          focusedBorder: buildBorder()),
+        hintText: hint,
+        hintStyle:
+            AppStyles.styleRegular16.copyWith(color: const Color(0xffAAAAAA)),
+        fillColor: const Color(0xffFAFAFA),
+        filled: true,
+        border: buildBorder(),
+        enabledBorder: buildBorder(),
+        focusedBorder: buildBorder(),
+      ),
     );
   }
 

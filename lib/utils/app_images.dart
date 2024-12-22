@@ -22,6 +22,10 @@ class Assets {
   /// assets/images/card_background.svg
   static const String imagesCardBackground = "assets/images/card_background.svg";
 
+  /// Assets for imagesCardBkg
+  /// assets/images/card_bkg.png
+  static const String imagesCardBkg = "assets/images/card_bkg.png";
+
   /// Assets for imagesDashboard
   /// assets/images/dashboard.svg
   static const String imagesDashboard = "assets/images/dashboard.svg";
@@ -29,6 +33,10 @@ class Assets {
   /// Assets for imagesExpenses
   /// assets/images/expenses.svg
   static const String imagesExpenses = "assets/images/expenses.svg";
+
+  /// Assets for imagesGallery
+  /// assets/images/gallery.svg
+  static const String imagesGallery = "assets/images/gallery.svg";
 
   /// Assets for imagesIncome
   /// assets/images/income.svg
@@ -47,8 +55,8 @@ class Assets {
   static const String imagesMyTransactions = "assets/images/my_transactions.svg";
 
   /// Assets for imagesSetting
-  /// assets/images/setting.png
-  static const String imagesSetting = "assets/images/setting.png";
+  /// assets/images/setting.svg
+  static const String imagesSetting = "assets/images/setting.svg";
 
   /// Assets for imagesStatistcs
   /// assets/images/statistcs.svg
